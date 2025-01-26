@@ -8,7 +8,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>My Portofolio</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS -->
+
+     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+
     <!-- BS Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- BS Icon -->
@@ -55,17 +62,17 @@
 
     <!-- About Section -->
       <section id="about">
-        <div class="container">
+        <div class="container" data-aos-offset="400">
             <div class="row">
                 <div class="col text-center mb-3">
                     <h2>About Me</h2>
                 </div>
             </div>
-            <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-4">
+            <div class="row justify-content-center fs-5 text-center" >
+                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis voluptatem assumenda veritatis ullam quo ratione voluptate, cum sequi facilis veniam?
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed esse, dignissimos sequi aliquid minus reprehenderit perspiciatis aliquam aut, veritatis iure odit, aspernatur impedit quidem corporis.
                 </div>
             </div>
@@ -84,8 +91,8 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-3" data-aos-offset="400">
+                    <div class="card" data-aos="flip-right" >
                         <img src="img/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -93,7 +100,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="100">
                         <img src="img/card2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -101,7 +108,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="200">
                         <img src="img/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -109,7 +116,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="300">
                         <img src="img/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -117,7 +124,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="400">
                         <img src="img/card5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -141,22 +148,22 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <form>
+                    <form name="contact form">
                         <div class="mb-3">
                           <label for="nama" class="form-label">Nama</label>
-                          <input type="text" class="form-control" id="nama" aria-describedby="nama">
+                          <input type="text" class="form-control" id="nama" aria-describedby="nama" name="name" autocomplete="name">
                         </div>
                         <div class="mb-3">
                           <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="email">
+                          <input type="email" class="form-control" id="email" aria-describedby="email" name="email" autocomplete="email">
                         </div>
                         <div class="mb-3">
                           <label for="Nohp" class="form-label">No Hp</label>
-                          <input type="text" class="form-control" id="Nohp" aria-describedby="Nohp">
+                          <input type="text" class="form-control" id="Nohp" aria-describedby="Nohp" name=Nohp autocomplete="Nohp">
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                            <textarea class="form-control" id="pesan" rows="3" name="pesan" autocapitalize="pesan"></textarea>
                           </div>
                         <button type="submit" class="btn btn-success">Kirim</button>
                       </form>
@@ -173,7 +180,29 @@
         <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/andr_ynnn/" class="text-white fw-bold">Andryan Wijaya</a></p>
       </footer>
     <!-- Akhir Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxfCXIlz19KIW7IqsIqF_H5bXVb3uPCiaqz0m428BPi9HSwgDIb2f_BsEyKGQYbO7XQ9g/exec'
+      const form = document.forms['contact form']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
